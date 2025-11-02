@@ -5,6 +5,7 @@ A production-ready template for building modern desktop applications with Tauri 
 ## 🚀 Features
 
 - **Modern Stack**: Tauri v2 + React 19 + TypeScript + Vite
+- **Package Manager**: pnpm for fast, efficient dependency management
 - **UI Components**: shadcn/ui v4 + Tailwind CSS v4 + Lucide React
 - **State Management**: Zustand v5 + TanStack Query v5
 - **Testing**: Vitest v3 + Testing Library
@@ -66,16 +67,16 @@ const handleAction = useCallback(() => {
 # Clone and install
 git clone <your-repo>
 cd tauri-template
-npm install
+pnpm install
 
 # Start development server
-npm run dev
+pnpm run dev
 
 # Run tests and quality checks
-npm run check:all
+pnpm run check:all
 
 # Build for production
-npm run build
+pnpm run build
 ```
 
 ### Project Structure
@@ -98,7 +99,7 @@ npm run build
 This template includes comprehensive quality gates:
 
 ```bash
-npm run check:all  # Runs all checks below:
+pnpm run check:all  # Runs all checks below:
 ```
 
 - ✅ TypeScript type checking
@@ -169,7 +170,7 @@ Before deploying your application to production, ensure you complete these criti
 
 ### Quality Assurance
 
-- [ ] **Run full test suite** - `npm run check:all` must pass
+- [ ] **Run full test suite** - `pnpm run check:all` must pass
 - [ ] **Test on all target platforms** - macOS, Windows, Linux as needed
 - [ ] **Verify auto-updater flow** - Test with signed releases
 - [ ] **Performance testing** - Ensure app performs well with real data
