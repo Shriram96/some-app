@@ -27,14 +27,14 @@ Ensure you have the following installed:
 2. **Install dependencies**:
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. **Start development**:
 
    ```bash
-   npm run dev        # React dev server only
-   npm run tauri:dev  # Full Tauri app (recommended)
+   pnpm run dev        # React dev server only
+   pnpm run tauri:dev  # Full Tauri app (recommended)
    ```
 
 4. **Verify everything works**:
@@ -87,6 +87,7 @@ This will:
 - **TypeScript**: Full type safety
 - **Testing**: Vitest + Testing Library setup
 - **Quality gates**: ESLint, Prettier, Rust checks
+- **Package manager**: pnpm for fast, efficient dependency management
 
 ## Customization Guide
 
@@ -163,13 +164,13 @@ export const projectCommands = [
 
 ```bash
 # Run all quality checks (recommended before commits)
-npm run check:all
+pnpm run check:all
 
 # Individual checks
-npm run typecheck    # TypeScript checking
-npm run lint         # ESLint
-npm run test:run     # Run tests
-npm run rust:clippy  # Rust linting
+pnpm run typecheck    # TypeScript checking
+pnpm run lint         # ESLint
+pnpm run test:run     # Run tests
+pnpm run rust:clippy  # Rust linting
 ```
 
 ### Project Structure
@@ -243,7 +244,7 @@ You can create an app icon based on [this Figma Template](https://www.figma.com/
 - **React DevTools**: Install browser extension for React debugging
 - **Tauri DevTools**: Built-in debugging tools (⌘+Shift+I)
 - **Rust Logs**: Check console for Rust backend logs
-- **Hot Reload Issues**: Restart `npm run tauri:dev`
+- **Hot Reload Issues**: Restart `pnpm run tauri:dev`
 
 ---
 

@@ -153,11 +153,11 @@ Err("File not found".to_string())
 
 ```bash
 # Check for vulnerabilities
-npm audit
+pnpm audit
 cargo audit
 
 # Fix automatically where possible
-npm audit fix
+pnpm audit --fix
 ```
 
 ### Dependency Management

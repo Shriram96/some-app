@@ -136,7 +136,7 @@ The Tauri [Clipboard Manager plugin](https://v2.tauri.app/plugin/clipboard/) is 
   "rust:test": "cd src-tauri && cargo test",
   "test": "vitest",
   "test:run": "vitest run",
-  "check:all": "npm run typecheck && npm run lint && npm run format:check && npm run test:run && npm run rust:fmt:check && npm run rust:clippy && npm run rust:test"
+  "check:all": "pnpm run typecheck && pnpm run lint && pnpm run format:check && pnpm run test:run && pnpm run rust:fmt:check && pnpm run rust:clippy && pnpm run rust:test"
 },
 ```
 
@@ -326,7 +326,7 @@ Five Claude Code agents specific to this project are included:
 
 One Claude Code Command is included. You should create moreas your product evolves.
 
-- `/check` -> Checks everything meets `docs/architecture-guide.css` , runs `npm run check:all` and fixes any problems.
+- `/check` -> Checks everything meets `docs/architecture-guide.css` , runs `pnpm run check:all` and fixes any problems.
 
 ## Other Boilerplate Bits
 
